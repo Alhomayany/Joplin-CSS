@@ -1,0 +1,182 @@
+/* For styling the rendered Markdown */
+body {
+  background-color: #1d2024;
+  color: white;
+}
+
+h2, h3, h4 {
+  color: #cdffd4;
+}
+
+wt {color: white;}
+or {color: #f99e16}
+bl {color: #4073ff}
+cy {color: cyan}
+rd {color: #ff2538}
+gr {color: #27ff32}
+mg {color: magenta}
+yl {color: yellow}
+
+dt {
+  color:#fc795f;
+  font-weight: bold;
+}
+
+p:has(+ ul) {
+  margin-bottom: -0.9ex;
+}
+
+p:has(+ ol) {
+  margin-bottom: -1.65ex;
+}
+
+ol + p {
+  margin-top: 1.5em;
+}
+
+li {
+  margin: 0;
+}
+
+li:first-child {
+  margin-top: -0.9ex;
+}
+
+
+
+/* Custom elements 
+* spoiler and ispoiler (i = inline)
+* note (standout card)
+* bookmark (full block)
+* pg (like bookmark but small and inline)
+* block (shows text in a maximally horizontal block)
+*/
+
+/* special sub-heading */
+sh {
+  color: #ddd;
+  border-bottom: #aaa dashed;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 0;
+  display: block;
+}
+
+spoiler {
+  color:black;
+  background-color: black;
+  border: 1px solid gray;
+  display: block;
+  border-radius: 3px;
+  padding: 0.6ex 1ex;
+
+}
+
+spoiler:hover {
+  color:white;
+  background-color: #1d2024;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+ispoiler {
+  padding: 0ex 0.2ex;
+  display:inline-block;
+  margin-bottom: 0.0ex;
+  background: black;
+  border: solid 1px grey;
+  border-radius: 3px;
+  color:black;
+}
+
+ispoiler:hover{
+  background:none;
+  transition: 0.3s;
+  color:white;
+  border: solid white 1px;
+}
+
+note {
+  border: 2px gray solid;
+  border-radius: 0px 24px;
+  color: white;
+  font-weight:bold;
+  display: grid;
+  margin: 1ex;
+  padding: 1.5ex 1.5ex;
+  padding-bottom: 1em;
+  break-before:always;
+  background: rgb(0,0,0);
+  background: linear-gradient(163deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 65%, rgba(0,22,255,1) 95%);
+  text-align: center;
+}
+
+note::before {
+  content: "📢 Note";
+  padding-left: 0.5ex;
+  font-size: 1.3em;
+  text-align:left;
+  font-family: Georgia, serif;
+  border-bottom: dashed 1px white;
+  margin-bottom: 0.5ex;
+  padding-bottom: 0.5ex;
+}
+
+note:hover {
+  border: 2px white solid;
+  transition: 0.8s;
+}
+
+bookmark {
+  text-align:center;
+  padding: 1ex;
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin-left: 1ex;
+  margin-right: 65%;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2.5ex;
+  background: black;
+  font-family: consolas;
+  color: #ff5858;
+}
+bookmark::before {
+  text-decoration: none;
+  content: "📑[";
+  text-align: center;	
+  color:white;
+  padding-left: 1ex;
+}
+bookmark::after {
+  text-decoration: none;
+  content: "]";	
+  color:white;
+  padding-right: 1.2ex;
+}
+
+pg {
+  color: rgb(127, 185, 127);
+  border: lightgray solid 1px;
+  padding: 0.2ex 0.8ex;
+  padding-left: 0.5ex;
+  background: black;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+pg::before {
+  content: "📄";
+  color: white;
+}
+
+block {
+  display: block;
+  background: #111;
+  border: 2px gray solid;
+  border-radius: 6px;
+  padding: 1ex;
+  color: white;
+}
