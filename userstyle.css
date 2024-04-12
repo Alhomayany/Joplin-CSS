@@ -58,6 +58,7 @@ sh {
   border-bottom: #aaa dashed;
   font-style: italic;
   font-weight: bold;
+  margin-top: 2ex;
   margin-bottom: 1.5ex;
   display: block;
 }
