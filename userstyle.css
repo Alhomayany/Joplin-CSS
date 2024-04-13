@@ -54,8 +54,8 @@ li:first-child {
 
 /* special sub-heading */
 sh {
-  color: #ddd;
-  border-bottom: #aaa dashed;
+  color: #b5ff73;
+  border-bottom: #aaa 1px dashed;
   font-style: italic;
   font-weight: bold;
   margin-top: 2ex;
