@@ -52,6 +52,44 @@ li:first-child {
 * block (shows text in a maximally horizontal block)
 */
 
+/* Special headings for morning/night journals */
+#morningh1 {
+  color: white;
+  border: 1px lightgray solid; 
+  border-radius:5px;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  break-after: always;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: -1px -1px 3px black, 3px 3px 2px black;
+  background-image: url(/OneDrive/Documents/Resources/day3.png);
+  font-weight:bold;
+}
+#morningh1::before, #morningh1::after {
+  content: ' 🌻 ';
+  text-shadow: none;
+}
+
+#nighth1 {
+  color: white;
+  border: 1px lightgray solid; 
+  border-radius:5px;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  break-after: always;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: -1px -1px 3px black, 3px 3px 2px black;
+  background-image: url(/OneDrive/Documents/Resources/stars3.png);
+  font-weight:bold;
+}
+#nighth1::before, #nighth1::after {
+  content: ' 🌠 ';
+}
+
 /* special sub-heading */
 sh {
   color: #b5ff73;
