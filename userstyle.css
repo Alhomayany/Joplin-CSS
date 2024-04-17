@@ -30,7 +30,7 @@ p:has(+ ol) {
   margin-bottom: -1.65ex;
 }
 
-ol + p {
+ol + p, ul + p {
   margin-top: 1.5em;
 }
 
@@ -38,8 +38,8 @@ li {
   margin: 0;
 }
 
-li:first-child {
-  margin-top: -0.9ex;
+ul li:first-child {
+  margin-top: -1ex;
 }
 
 
@@ -57,6 +57,8 @@ li:first-child {
   color: white;
   border: 1px lightgray solid; 
   border-radius:5px;
+  padding: 1.5ex;
+  margin-top: 0.5ex;
   display: block;
   justify-content: center;
   text-align: center;
@@ -76,6 +78,8 @@ li:first-child {
   color: white;
   border: 1px lightgray solid; 
   border-radius:5px;
+  padding: 1.5ex;
+  margin-top: 0.5ex;
   display: block;
   justify-content: center;
   text-align: center;
