@@ -42,6 +42,10 @@ ul li:first-child {
   margin-top: -1ex;
 }
 
+ol > li:first-child {
+  margin-top: 0;
+}
+
 
 
 /* Custom elements 
